@@ -3,5 +3,29 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1"
-  }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "name": "react-2024",
+  "description": "1.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/r7chardgh/react-2024.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "richard tsang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r7chardgh/react-2024/issues"
+  },
+  "homepage": "https://github.com/r7chardgh/react-2024#readme"
 }
