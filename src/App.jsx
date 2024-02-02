@@ -4,6 +4,7 @@ import './styles/app.css'
 import Avatar from "./components/Avatar";
 import LoginButton from "./components/LoginButton";
 import ProductList from "./components/ProductList";
+import Parent from "./components/Parent";
 const user = {
   name: 'Hedy Lamarr',
   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
@@ -17,6 +18,7 @@ const App = () => {
       <Avatar user={user}/>
       <LoginButton/>
       <ProductList/>
+      <Parent/>
     </>
   );
 };
