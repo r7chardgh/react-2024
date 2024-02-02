@@ -2,6 +2,8 @@ import React from "react";
 import MyButton from "./components/MyButton";
 import './styles/app.css'
 import Avatar from "./components/Avatar";
+import LoginButton from "./components/LoginButton";
+import ProductList from "./components/ProductList";
 const user = {
   name: 'Hedy Lamarr',
   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
@@ -13,6 +15,8 @@ const App = () => {
       <h2>My App</h2>
       <MyButton />
       <Avatar user={user}/>
+      <LoginButton/>
+      <ProductList/>
     </>
   );
 };
