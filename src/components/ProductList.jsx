@@ -1,12 +1,16 @@
 import React from "react";
 
 const products = [
-  { title: "Cabbage", id: 1 },
-  { title: "Garlic", id: 2 },
-  { title: "Apple", id: 3 },
+  { title: "Cabbage", isFruit: false, id: 1 },
+  { title: "Garlic", isFruit: false, id: 2 },
+  { title: "Apple", isFruit: true, id: 3 },
 ];
 const ProductList = () => {
-  const listItems = products.map((item) => <li key={item.id}>{item.title}</li>);
+  const listItems = products.map((item) => (
+    <li key={item.id} style={{ color: item.isFruit ? "magenta" : "darkgreen" }}>
+      {item.title}
+    </li>
+  ));
   return <ul>{listItems}</ul>;
 };
 
