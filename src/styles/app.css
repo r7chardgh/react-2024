@@ -4,3 +4,20 @@
 .avatar{
     border-radius: 50%;
 }
+.container{
+    padding: 1rem;
+}
+
+.square{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.board-row{
+    display: flex;
+}
