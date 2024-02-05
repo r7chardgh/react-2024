@@ -1,7 +1,11 @@
 import React from "react";
 
 const Avatar = ({ user }) => {
-  console.log(user);
+  React.useEffect(() => {
+    console.log(user)
+  
+  }, [])
+  
   return (
     <>
       {user ? (
