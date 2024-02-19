@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Row = ({children,...props}) => {
+const Row = () => {
   return (
-    <div className='board-row' {...props} >{children}</div>
+    <div>Row</div>
   )
 }
 

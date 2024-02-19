@@ -5,8 +5,6 @@ import Avatar from "./components/Avatar";
 import LoginButton from "./components/LoginButton";
 import ProductList from "./components/ProductList";
 import Parent from "./components/Parent";
-import Row from "./components/tic-tac-toe/Row";
-import Square from "./components/tic-tac-toe/Square";
 const user = {
   name: "Hedy Lamarr",
   imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
@@ -101,29 +99,7 @@ const App = () => {
       <LoginButton />
       <ProductList />
       <Parent />
-      <div className="container">
-        <h1>Tic Tac Toe</h1>
-        <div className="status">{status}</div>
-        <Row>
-          <Square value={currentSquares[0]} onSquareClick={() => handleClick(0)} />
-          <Square value={currentSquares[1]} onSquareClick={() => handleClick(1)} />
-          <Square value={currentSquares[2]} onSquareClick={() => handleClick(2)} />
-        </Row>
-        <Row>
-          <Square value={currentSquares[3]} onSquareClick={() => handleClick(3)} />
-          <Square value={currentSquares[4]} onSquareClick={() => handleClick(4)} />
-          <Square value={currentSquares[5]} onSquareClick={() => handleClick(5)} />
-        </Row>
-        <Row>
-          <Square value={currentSquares[6]} onSquareClick={() => handleClick(6)} />
-          <Square value={currentSquares[7]} onSquareClick={() => handleClick(7)} />
-          <Square value={currentSquares[8]} onSquareClick={() => handleClick(8)} />
-        </Row>
-        <div className="game-info">
-
-          <ol>{moves}</ol>
-        </div>
-      </div>
+    
     </>
   );
 };
