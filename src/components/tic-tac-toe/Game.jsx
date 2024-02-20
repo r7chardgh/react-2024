@@ -4,11 +4,11 @@ const Game = () => {
   const [history, setHistory] = React.useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = React.useState(0);
   const currentSquares = history[currentMove];
-  const nextIsX = currentMove%2===0;
+  const nextIsX = currentMove % 2 === 0;
   const handlePlay = (squares) => {
-    const nextHistory = [...history.slice(0,currentMove+1),squares];
+    const nextHistory = [...history.slice(0, currentMove + 1), squares];
     setHistory(nextHistory);
-    setCurrentMove(nextHistory.length-1)
+    setCurrentMove(nextHistory.length - 1);
   };
 
   function jumpTo(move) {
@@ -24,7 +24,11 @@ const Game = () => {
     }
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{desc}</button>
+        {move === history.length - 1 ? (
+          <div>{`You are at move #${move}`}</div>
+        ) : (
+          <button onClick={() => jumpTo(move)}>{desc}</button>
+        )}
       </li>
     );
   });
