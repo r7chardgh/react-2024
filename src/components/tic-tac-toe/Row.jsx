@@ -1,11 +1,7 @@
 import React from "react";
 
-const Row = ({ children, ...props }) => {
-  return (
-    <div className="board-row" props>
-      {children}
-    </div>
-  );
+const Row = ({ children }) => {
+  return <div className="board-row">{children}</div>;
 };
 
 export default Row;
